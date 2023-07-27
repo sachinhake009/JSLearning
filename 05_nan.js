@@ -7,7 +7,7 @@ var result = num1/num2;
 console.log(result);
 
 var num3 = "100";
-console.log(`Type of num3 is: ${typeof num3}`);
+console.log(`Type of num3 is: ${typeof num3}`);  
 var result = +num3;
 console.log(`Type of result is: ${result}`);
 console.log(`Type of result is: ${typeof result}`);
