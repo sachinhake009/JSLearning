@@ -30,31 +30,37 @@ voteEligibil(null);
 
 console.log(`----------------------------Assignment 3------------------------------`);
 
-  function gradeCalculation(name,mark){
-    if (mark>=0 || mark<=100) {
-        console.log(`${mark} Please Provide valiedmark`);
-    } else {
-        console.log(` ${name} ${mark}: your grade is A+`);
+  var gradeCalculation = function(mark){
+    if (mark===null || mark===undefined || isNaN(mark) || mark<0 || mark>100) {
+        console.log(`Please provide valied number`);
+    }
+    else if (mark>=90) {
+        console.log(`Fantastic markes:${mark} Your grade is A+ `);
+    }
+    else if (mark>=75 && mark<90) {
+        console.log(`Exclent marks : ${mark} Your grade is A`);
+    }
+    else if (mark>=50 && mark<75) {
+        console.log(`Good Mark: ${mark} Your grade is B`);
+    }
+    else if (mark>=35 && mark<50) {
+        console.log(`Mark is: ${mark} Your grade is C Need Implement`);
+    }
+    else{
+        console.log(`Please provide the valid number`);
     }
   }
-  gradeCalculation(98,"Funtastic Mark");
-
-  function gradeCalculation(name,mark){
-    if (mark>=0 || mark<=100) {
-        console.log(`${mark} Please Provide valiedmark`);
-    } else {
-        console.log(` ${name} ${mark}: your grade is A`);
-    }
-  }
-  gradeCalculation(80,"Excellent Mark");
-
-  function gradeCalculation(name,mark){
-    if (mark>=0 || mark<=100) {
-        console.log(`${mark} Please Provide valiedmark`);
-    } else {
-        console.log(` ${name} ${mark}: your grade is A+`);
-    }
-  }
-  gradeCalculation(90,"Funtastic Mark");
-
-  
+  gradeCalculation(98);
+  gradeCalculation(80);
+  gradeCalculation(90);
+  gradeCalculation(0);
+  gradeCalculation(150);
+  gradeCalculation(-7);
+  gradeCalculation(35);
+  gradeCalculation(29);
+  gradeCalculation(64);
+  gradeCalculation(49);
+  gradeCalculation(91);
+  gradeCalculation("Eighty");
+  gradeCalculation(undefined);
+  gradeCalculation(null);
