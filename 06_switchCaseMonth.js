@@ -1,5 +1,7 @@
 
 
+console.log(`------------------Assignment 01----------------------`);
+
 var monthOfYear = function(month){
 switch (month) {
     case 1:
@@ -54,3 +56,24 @@ monthOfYear(15);
 monthOfYear(100);
 monthOfYear(null);
 monthOfYear(undefined);
+
+
+console.log(`------------------Assignment 02----------------------`);
+
+function marraigeEligiblity(gender,age){
+if (gender=="male" && age>=21) {
+    console.log(`Gender is :${gender},age is :${age}, You are Eligible for marrige`);
+} else {
+    if (gender=="Female" && age>=18) {
+        console.log(`Gender is :${gender}, age is :${age}, You are Eligible for Marrige`);
+    } else {
+        console.log(`Gender is :${gender}, age is :${age}, You are Not Eligible for Marrige`);
+    }
+}
+}
+marraigeEligiblity("male",17);
+marraigeEligiblity("male",25);
+marraigeEligiblity("Female",28);
+marraigeEligiblity("Female",16);
+marraigeEligiblity("other",35);
+marraigeEligiblity("other",41);
