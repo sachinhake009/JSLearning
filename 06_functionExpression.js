@@ -1,7 +1,7 @@
 
 
 function leapYear(year){
-if (year/4) {
+if (year%4==0) {
     console.log(`Year is :${year}, --leap year`);
 } else {
     console.log(`Year is :${year}, --NOT leap year`);
