@@ -1,0 +1,28 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <h2>Local Storage</h2>
+    <script>
+localStorage.setItem("Name","Sachin Kashiling Hake");
+localStorage.setItem("City","Pandharpur");
+localStorage.setItem("Pincode","413304");
+localStorage.setItem("District","Solapur");
+let Name = localStorage.getItem("Name");
+console.log(Name);
+let City = localStorage.getItem("City");
+console.log(City);
+let Pincode = localStorage.getItem("Pincode");
+console.log(Pincode);
+let District = localStorage.getItem("District");
+console.log(District);
+localStorage.removeItem('City');
+    </script>
+</body>
+</html>
