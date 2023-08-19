@@ -1,5 +1,5 @@
 
-
+// json is javascript object notation 
 let addressStr = `{
     "flatNo": 307,
     "building": "B",
