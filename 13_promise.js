@@ -1,11 +1,11 @@
 
 
 let isNotesPrepared = false;
-let promise = new Promise(function(resolve, reject){
+let promise = new Promise(function(r1, r2){
     if (isNotesPrepared) {
-        resolve(`Takes this notes guys and be prepared please`);
+        r1(`Takes this notes guys and be prepared please`);
     }else{
-        reject(`Sorry guys, I can't share notes as I didn't get time`);
+        r2(`Sorry guys, I can't share notes as I didn't get time`);
     }
 });
 promise.then(function(success){
