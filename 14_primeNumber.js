@@ -11,7 +11,7 @@ function isPrime(number) {
         return false;
     }
     for (let i = 5; i * i <= number; i +=6) {
-        if (number % i === 0 || number (i + 2) == 0) {
+        if (number % i === 0 || number (i + 2) == 0) {n 
             return false;
         }        
     }
