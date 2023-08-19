@@ -9,6 +9,7 @@ let notification = function (){
 
 setTimeout(notification, 8000);
 
+console.log(`================================`);
 
 setTimeout(function(){
     for (let index = 0; index <=10; index++) {
